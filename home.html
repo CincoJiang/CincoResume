@@ -2,30 +2,80 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>cinco studio</title>
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> -->
+    <link href="css/xiangqi.css" type="text/css" rel="stylesheet" />
+	<title>index</title>
 	<link href="css/all.css" rel="stylesheet"></link>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <!-- 文字跳动 -->
-    <script type="text/javascript" src="js/mword/jquery.min.js"></script>
-	<script type="text/javascript" src="js/mword/jquery.bumpytext.packed.js"></script>
-	<script type="text/javascript" src="js/mword/easying.js"></script>
-	<script type="text/javascript">
-	//<![CDATA[
-	$(document).ready(function() {
-
-	$('p#example').bumpyText();
-	});            //]]>
-	</script>
-	<!-- 文字跳动end -->
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true"> -->
 </head>
 <body>
-	<div class="home">
-		<img src="img/home.jpg" onclick="window.open('index.html')"></img>
-		<div class="mwords">
-		     <p id="example">Web拓荒者的世界 血雨腥风 点击背景 进入“为你倩百度”</p>
-	    </div>
+	<div class="index">
+      <div class="hat">
+      	<div class="cinco-infor">
+      		<h1>为你倩百度</h1>
+      		<h2>NAME:Cinco WU</h2>
+          <h2>JOB:WEB前端拓荒者</h2>
+      		<h2>TEL:188-0162-7983</h2>
+      		<h2>MAIL:yinqingqian@outlook.com</h2>
+      	</div>
+      </div>
+      <div class="scraf">
+      	<div class="nav">
+      		<div class="nitem f_l ispc"><a href="#">Myworks</a></div>
+      		<div class="nitem f_l"><a href="#">Jquery</a></div>
+      		<div class="nitem f_l"><a href="#">Css3</a></div>
+      		<div class="nitem f_l"><a href="#">Html5</a></div>
+      		<div class="nitem f_l"><a href="about me.html">About me</a></div>
+      	</div>
+      </div>
+      <div class="xiangqi f_l" style="width: 350px;height: 460px;padding: 50px 20px 50px 50px;">
+          <div class="box" id="box">
+          <div class="chess_left">
+            <canvas id="chess">对不起，您的浏览器不支持HTML5，请升级浏览器至IE9、firefox或者谷歌浏览器！</canvas>
+            <audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+            <!--<audio src="audio/check.wav" id="checkAudio" preload="auto"></audio>-->
+            <audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>
+            <div>
+              <div class="bn_box" id="bnBox">
+                <input type="button" name="offensivePlay" id="tyroPlay" value="新手水平" />
+                <input type="button" name="offensivePlay" id="superPlay" value="中级水平" />
+                        <input type="button" name="button" id="" value="大师水平" disabled />
+                <!--
+              <input type="button" name="offensivePlay" id="offensivePlay" value="先手开始" />
+              <input type="button" name="defensivePlay" id="defensivePlay" value="后手开始" />
+              -->
+                <input type="button" name="regret" id="regretBn" value="悔棋" />
+                <input type="button" name="billBn" id="billBn" value="棋谱" class="bn_box" />
+                <!-- <input type="button" name="stypeBn" id="stypeBn" value="换肤" /> -->
+              </div>
+            </div>
+          </div>
+          <div class="chess_right" id="chessRight">
+            <select name="billList" id="billList">
+            </select>
+            <ol id="billBox" class="bill_box">
+            </ol>
+          </div>
+          <div id="moveInfo" class="move_info"> </div>
+           </div>
+      </div>
+      <div class="xiangr f_l" style="width:780px;height:390px;padding:80px 0px;">
+        <p style="color:#a66321">这是一场关于网页绣花的血雨腥风
+          ...<p>
+        <p style="color:#a66321">这是一段涉及多领域的江湖恩怨...<p>
+        <p style="color:#a66321">面对万千BUG的厮杀 有棋逢对手的兴奋感 也有手无足措的疲惫感...<p>
+        <p style="color:#a66321">回廊一寸相思地 落月成孤倚...<p>
+        <p style="color:#a66321">响应布局兼容性 插件万千 选择器...<p>
+        <p style="color:#a66321">独坐寝宫木椅 望屏幕 手指翻飞 只为博君一笑...<p>
+        <p style="color:#a66321">不觉鸡唱天明...<p>
+        </div>
 	</div>
+        <script src="js/xiangqi/common.js"  charset="gb2312"></script> 
+        <script src="js/xiangqi/play.js"  charset="gb2312"></script> 
+        <script src="js/xiangqi/AI.js"  charset="gb2312"></script> 
+        <script src="js/xiangqi/bill.js"  charset="gb2312"></script> 
+        <script src="js/xiangqi/gambit.js"  charset="gb2312"></script>
 </body>
 </html>
