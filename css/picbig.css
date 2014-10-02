@@ -1,0 +1,6 @@
+  #tip { position:absolute; color:#333; display:none; z-index:20000;}
+  #tip s { position:absolute; top:40px; left:-20px; display:block; width:0px; height:0px; font-size:0px; line-height:0px; border-color:transparent #BBA transparent transparent; border-style:dashed solid dashed dashed; border-width:10px;}
+  #tip s i { position:absolute; top:-10px; left:-9px; display:block; width:0px; height:0px; font-size:0px; line-height:0px; border-color:transparent #fff transparent transparent; border-style:dashed solid dashed dashed; border-width:10px;}
+  #tip .t_box { position:relative; filter:alpha(opacity=50); -moz-opacity:0.5; bottom:-3px; right:-3px;}
+  #tip .t_box div { position:relative; border:1px solid #ACA899; background:#FFF; padding:1px; top:-3px; left:-3px;}
+  .tip { width: 139.5px;height: 113px;}
