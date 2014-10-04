@@ -19,14 +19,14 @@ input{background-color:#691304;color:#fff;}
 }
 
 
-.index{background:#000;height: 1000px;width: 1200px;margin: 0 auto;padding: 0; }
+.index{background:#000;height: 1000px;width: 1200px;margin: 0 auto;padding: 0;}
 .index .hat{width: 1200px;height: 400px;background: url(../img/home.jpg) no-repeat right;background-size: contain;position: relative;}
 .index .hat .cinco-infor{width: 500px;height: 300px;position: absolute;margin-left: 50px;margin-top: 50px;}
 .index .scraf{width: 1200px;height: 36px;background-color: #691304;}
 .index .scraf .nav{width: 1000px;height: 36px;margin: 0 auto;}
 .index .scraf .nav .nitem{width: 200px;height: 36px;text-align: center;line-height: 36px;}
 .index .scraf .nav .nitem:hover{background: #313534;box-shadow: 0px 1px 1px #fff};
-
+.index .story{width: 750px;height: 560px;}
 
 .aboutme{}
 .aboutme .abouttop{background:#000;height: 1000px;width: 1200px;margin: 0 auto;padding: 0;position:relative;}

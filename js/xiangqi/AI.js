@@ -1,17 +1,17 @@
-/*! 一叶孤舟 | qq:28701884 | 欢迎指教 */
+/*! 脪禄脪露鹿脗脰脹 | qq:28701884 | 禄露脫颅脰赂陆脤 */
 
 var AI = AI||{};
 
-AI.historyTable	=	{};		//历史表
+AI.historyTable	=	{};		//脌煤脢路卤铆
 
 
-//人工智能初始化
+//脠脣鹿陇脰脟脛脺鲁玫脢录禄炉
 AI.init = function(pace){
-	var bill = AI.historyBill || com.gambit; //开局库
+	var bill = AI.historyBill || com.gambit; //驴陋戮脰驴芒
 	if (bill.length){
 		var len=pace.length;
 		var arr=[];
-		//先搜索棋谱
+		//脧脠脣脩脣梅脝氓脝脳
 		for (var i=0;i< bill.length;i++){
 			if (bill[i].slice(0,len)==pace) {
 			arr.push(bill[i]);
@@ -26,7 +26,7 @@ AI.init = function(pace){
 		}
 		
 	}
-	 //如果棋谱里面没有，人工智能开始运作
+	 //脠莽鹿没脝氓脝脳脌茂脙忙脙禄脫脨拢卢脠脣鹿陇脰脟脛脺驴陋脢录脭脣脳梅
 	var initTime = new Date().getTime();
 	AI.treeDepth=play.depth;
 	//AI.treeDepth=4;
@@ -57,7 +57,7 @@ AI.init = function(pace){
 	}
 }
 
-//迭代加深搜索着法
+//碌眉麓煤录脫脡卯脣脩脣梅脳脜路篓
 AI.iterativeSearch = function (map, my){
 	var timeOut=100;
 	var initDepth = 1;
@@ -77,7 +77,7 @@ AI.iterativeSearch = function (map, my){
 	return false;
 }
 
-//取得棋盘上所有棋子
+//脠隆碌脙脝氓脜脤脡脧脣霉脫脨脝氓脳脫
 AI.getMapAllMan = function (map, my){
 	var mans=[];
 	for (var i=0; i<map.length; i++){
@@ -94,9 +94,9 @@ AI.getMapAllMan = function (map, my){
 }
 
 /*
-//取得棋谱所有己方棋子的着法
+//脠隆碌脙脝氓脝脳脣霉脫脨录潞路陆脝氓脳脫碌脛脳脜路篓
 AI.getMoves = function (map, my, txtMap){
-	var highMores = [];   //优先级高的着法
+	var highMores = [];   //脫脜脧脠录露赂脽碌脛脳脜路篓
 	var manArr = AI.getMapAllMan (map, my);
 	var moves = [];
 	var history=AI.historyTable[txtMap];
@@ -114,7 +114,7 @@ AI.getMoves = function (map, my, txtMap){
 	return highMores.concat(moves);
 }
 */
-//取得棋谱所有己方棋子的着法
+//脠隆碌脙脝氓脝脳脣霉脫脨录潞路陆脝氓脳脫碌脛脳脜路篓
 AI.getMoves = function (map, my){
 	var manArr = AI.getMapAllMan (map, my);
 	var moves = [];
@@ -128,7 +128,7 @@ AI.getMoves = function (map, my){
 			var y=man.y;
 			var newX=val[n][0];
 			var newY=val[n][1];
-			 //如果不是长将着法
+			 //脠莽鹿没虏禄脢脟鲁陇陆芦脳脜路篓
 			if (foul[0]!=x || foul[1]!=y || foul[2]!=newX || foul[3]!=newY ){
 				moves.push([x,y,newX,newY,man.key])
 			}
@@ -136,7 +136,7 @@ AI.getMoves = function (map, my){
 	}
 	return moves;
 }
-//A:当前棋手value/B:对手value/depth：层级
+//A:碌卤脟掳脝氓脢脰value/B:露脭脢脰value/depth拢潞虏茫录露
 AI.getAlphaBeta = function (A, B, depth, map ,my) { 
 	//var txtMap= map.join();
 	//var history=AI.historyTable[txtMap];
@@ -144,15 +144,15 @@ AI.getAlphaBeta = function (A, B, depth, map ,my) {
 	//		return 	history.value*my;
 	//}
 	if (depth == 0) {
-		return {"value":AI.evaluate(map , my)}; //局面评价函数; 
-　	}
-　	var moves = AI.getMoves(map , my ); //生成全部走法; 
-　	//这里排序以后会增加效率
+		return {"value":AI.evaluate(map , my)}; //戮脰脙忙脝脌录脹潞炉脢媒; 
+	}
+	var moves = AI.getMoves(map , my ); //脡煤鲁脡脠芦虏驴脳脽路篓; 
+
 
 	for (var i=0; i < moves.length; i++) {
 		
 		
-　　	//走这个走法;
+	//脳脽脮芒赂枚脳脽路篓;
 		var move= moves[i];
 		var key = move[4];
 		var oldX= move[0];
@@ -166,7 +166,7 @@ AI.getAlphaBeta = function (A, B, depth, map ,my) {
 		play.mans[key].x = newX;
 		play.mans[key].y = newY;
 		
-	　　if (clearKey=="j0"||clearKey=="J0") {//被吃老将,撤消这个走法; 
+	if (clearKey=="j0"||clearKey=="J0") {//卤禄鲁脭脌脧陆芦,鲁路脧没脮芒赂枚脳脽路篓; 
 			play.mans[key]	.x = oldX;
 			play.mans[key]	.y = oldY;
 			map[ oldY ][ oldX ] = key;
@@ -178,11 +178,11 @@ AI.getAlphaBeta = function (A, B, depth, map ,my) {
 
 			return {"key":key,"x":newX,"y":newY,"value":8888};
 			//return rootKey; 
-	　　}else { 
-	　　	var val = -AI.getAlphaBeta(-B, -A, depth - 1, map , -my).value; 
+	}else { 
+		var val = -AI.getAlphaBeta(-B, -A, depth - 1, map , -my).value; 
 			//val = val || val.value;
 	
-	　　	//撤消这个走法;　 
+		//鲁路脧没脮芒赂枚脳脽路篓;隆隆 
 			play.mans[key]	.x = oldX;
 			play.mans[key]	.y = oldY;
 			map[ oldY ][ oldX ] = key;
@@ -191,38 +191,38 @@ AI.getAlphaBeta = function (A, B, depth, map ,my) {
 				 map[ newY ][ newX ] = clearKey;
 				 //play.mans[ clearKey ].isShow = true;
 			}
-	　　	if (val >= B) { 
-				//将这个走法记录到历史表中; 
+		if (val >= B) { 
+				//陆芦脮芒赂枚脳脽路篓录脟脗录碌陆脌煤脢路卤铆脰脨; 
 				//AI.setHistoryTable(txtMap,AI.treeDepth-depth+1,B,my);
 				return {"key":key,"x":newX,"y":newY,"value":B}; 
 			} 
 			if (val > A) { 
-	　　　　	A = val; //设置最佳走法; 
+		A = val; //脡猫脰脙脳卯录脩脳脽路篓; 
 				if (AI.treeDepth == depth) var rootKey={"key":key,"x":newX,"y":newY,"value":A};
 			} 
 		} 
-　	} 
-	//将这个走法记录到历史表中; 
+	} 
+	//陆芦脮芒赂枚脳脽路篓录脟脗录碌陆脌煤脢路卤铆脰脨; 
 	//AI.setHistoryTable(txtMap,AI.treeDepth-depth+1,A,my);
-	if (AI.treeDepth == depth) {//已经递归回根了
+	if (AI.treeDepth == depth) {//脪脩戮颅碌脻鹿茅禄脴赂霉脕脣
 		if (!rootKey){
-			//AI没有最佳走法，说明AI被将死了，返回false
+			//AI脙禄脫脨脳卯录脩脳脽路篓拢卢脣碌脙梅AI卤禄陆芦脣脌脕脣拢卢路碌禄脴false
 			return false;
 		}else{
-			//这个就是最佳走法;
+			//脮芒赂枚戮脥脢脟脳卯录脩脳脽路篓;
 			return rootKey;
 		}
 	}
-　return {"key":key,"x":newX,"y":newY,"value":A}; 
+   return {"key":key,"x":newX,"y":newY,"value":A}; 
 }
 
-//奖着法记录到历史表
+//陆卤脳脜路篓录脟脗录碌陆脌煤脢路卤铆
 AI.setHistoryTable = function (txtMap,depth,value,my){
 	AI.setHistoryTable.lenght ++;
 	AI.historyTable[txtMap] = {depth:depth,value:value} 
 }
 
-//评估棋局 取得棋盘双方棋子价值差
+//脝脌鹿脌脝氓戮脰 脠隆碌脙脝氓脜脤脣芦路陆脝氓脳脫录脹脰碌虏卯
 AI.evaluate = function (map,my){
 	var val=0;
 	for (var i=0; i<map.length; i++){
@@ -233,14 +233,14 @@ AI.evaluate = function (map,my){
 			}
 		}
 	}
-	//val+=Math.floor( Math.random() * 10);  //让AI走棋增加随机元素
+	//val+=Math.floor( Math.random() * 10);  //脠脙AI脳脽脝氓脭枚录脫脣忙禄煤脭陋脣脴
 	//com.show()
 	//z(val*my)
 	AI.number++;
 	return val*my;
 }
 
-//评估棋局 取得棋盘双方棋子价值差
+//脝脌鹿脌脝氓戮脰 脠隆碌脙脝氓脜脤脣芦路陆脝氓脳脫录脹脰碌虏卯
 AI.evaluate1 = function (map,my){
 	var val=0;
 	for (var i in play.mans){
@@ -249,7 +249,7 @@ AI.evaluate1 = function (map,my){
 			val += man.value[man.y][man.x] * man.my;
 		}
 	}
-	//val+=Math.floor( Math.random() * 10);  //让AI走棋增加随机元素
+	//val+=Math.floor( Math.random() * 10);  //脠脙AI脳脽脝氓脭枚录脫脣忙禄煤脭陋脣脴
 	//com.show()
 	//z(val*my)
 	AI.number++;
