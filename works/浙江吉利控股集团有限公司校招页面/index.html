@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浙江吉利控股集团有限公司校招页面</title>
+	<link href="index.css" rel="stylesheet"></link>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<div class="w1200 bg01">
+		<div class="bg02">
+			<div class="bg03">
+				<div class="w1000">
+					<div class="nav">
+						<div class="f_l navw01"><a href="#">集团介绍</a></div>
+						<div class="f_l navw02"><a href="#">校园招聘</a></div>
+						<div class="f_l navw03"><a href="#">GM研究生招聘</a></div>
+						<div class="f_l navw04"><a href="#">成长在吉利</a></div>
+					</div>
+					<div class="cont">
+						<div class="cont_l f_l bg04">
+							<div class="main bg05">
+								<div idfor="contrb01" class="item"><a href="#">集团介绍</a></div>
+								<div idfor="contrb02" class="item"><a href="#">校园招聘</a></div>
+								<div idfor="contrb03" class="item"><a href="#">GM1000研究生招聘</a></div>
+								<div idfor="contrb04" class="item"><a href="#">成长在吉利</a></div>
+								<div idfor="contrb05" class="item"><a href="#">联系我们</a></div>
+							</div>
+							<div class="pic"></div>
+						</div>
+						<div class="cont_r f_l"  id="contrb01" style="display:block">
+							<div class="contr_t"></div>
+							<div class="contr_b">
+								one
+							</div>
+						</div>
+						<div class="cont_r f_l"  id="contrb02" style="display:none">
+							<div class="contr_t"></div>
+							<div class="contr_b">
+								two
+							</div>
+						</div>
+						<div class="cont_r f_l"  id="contrb03" style="display:none">
+							<div class="contr_t"></div>
+							<div class="contr_b">
+								tree
+							</div>
+						</div>
+						<div class="cont_r f_l"  id="contrb04" style="display:none">
+							<div class="contr_t"></div>
+							<div class="contr_b">
+								four
+							</div>
+						</div>
+						<div class="cont_r f_l"  id="contrb05" style="display:none">
+							<div class="contr_t"></div>
+							<div class="contr_b">
+								five
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer bg06">
+			<b>未经zhaopin.com愿意，不得转载本网站之所有招聘信息及作品。智联招聘网所有*1997-2013</b>
+		</div>
+	</div>
+	<script>
+
+	$('.main div').mouseover(function(){
+    var mod=$(this).attr("idfor");
+    $('.cont_r').hide();
+    $("#"+mod).show();
+    })
+
+	</script>
+</body>
+</html>

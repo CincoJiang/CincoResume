@@ -1,0 +1,87 @@
+@font-face{
+	font-family:"xinshu";  
+    src:url('../fonts/glyphicons-xinshu.ttf') 
+}
+body{font-family: 'Microsoft Yahei';min-height: 740px;background: #ddd;}
+a{color: #666;}
+a:hover{color: #EA5E00}
+a,a:hover{text-decoration: none;cursor: pointer;}
+h4{margin:0;}
+ul,li{list-style: none;padding: 0;margin: 0;}
+p{color: #fff;font-size: 18px;}
+.container{width: 1200px;margin: 0 auto;padding: 0;}
+.grid{box-shadow: 0 0 5px rgba(0, 0, 0, .2);}
+.f_l{float: left;}
+.f_r{float: right;}     
+.m_l{margin-left: 10px;}   
+.col{background: #B0B1B2}
+.col2{background: #B11}
+.col3{background: #7A0B0B}
+
+.topfirst{width: 100%;height: 34px;background: #7A7D8B;}
+
+.top{height: 120px;width: 1200px;overflow: hidden;margin-bottom: 20px;border: 1px #ddd solid;}
+.fun_t{height: 500px;width: 1200px;margin-bottom: 20px;}
+.fun_t .fun_t_l{height: 500px;width: 780px;background: #000}
+.fun_t .fun_t_l .vadio{height: 400px;width: 780px;overflow: hidden;margin-bottom: 10px;border: 1px #ddd solid;}
+.fun_t .fun_t_l .scroll{height: 100px;width: 780px;}
+.fun_t .fun_t_l .scroll img{height: 80px;width: 118px;margin-top: 10px;}
+.fun_t .fun_t_r{height: 500px;width: 400px;margin-left: 20px;}
+.fun_t .fun_t_r .fun_title{height: 50px;width: 400px;border-bottom: 1px #ddd solid;background:#7A7D8B;line-height: 50px;}
+.fun_t .fun_t_r .fun_title a{font-size: 18px;color: #fff;margin-left: 20px;}
+.fun_t .fun_t_r .fun_detail{height: 450px;width: 400px;}
+.fun_t .fun_t_r .fun_detail li{height: 30px;width: 400px;line-height: 30px;}
+.fun_b{height: 500px;width: 1200px;}
+.fun_b .game_l{height: 630px;width: 780px;float: left;}
+.fun_b .game_l .ulike{height: 200px;width: 780px;margin-bottom: 10px;}
+.fun_b .game_l .ulike .ulike_title{height: 50px;width: 780px;border-bottom: 1px #C4C5CA solid;background:#7A7D8B;line-height: 50px; }
+.fun_b .game_l .ulike .ulike_title p{margin-left: 20px;}
+.fun_b .game_l .ulike .ulike_detail{height: 150px;width: 780px;}
+.fun_b .game_l .ulike .ulike_detail li{height: 150px;width: 253px;float: left;}
+.fun_b .game_l .ulike .ulike_detail .game_icon{height: 150px;width: 83px;}
+.fun_b .game_l .ulike .ulike_detail .game_icon img{height: 83px;width: 83px;margin-top: 30px;}
+.fun_b .game_l .ulike .ulike_detail .game_info{height: 150px;width: 170px;margin-top: 30px;padding-left: 10px;}
+.fun_b .game_l .ulike .ulike_detail .game_info span{font-size: 12px;color:#FA2020;}
+.fun_b .game_l .ulike .ulike_detail .game_info p{color:#9B979B;}
+.fun_b .game_l .ulike .ulike_detail .game_info b{font-size: 16px;color:#FA2020;}
+
+
+.fun_b .game_r{height: 500px;width: 400px;margin-left: 20px;float: left;border: 1px #ddd solid;}
+.fun_b .game_r .game_r_title{height: 50px;width: 400px;border-bottom: 1px #ddd solid;background:#7A7D8B;line-height: 50px;}
+.fun_b .game_r .game_r_title a{font-size: 18px;color: #fff;margin-left: 20px;}
+.fun_b .game_r .game_r_detail{height: 450px;width: 400px;}
+.fun_b .game_r .game_r_detail li{height: 50px;width: 400px;line-height: 50px;}
+.fun_b .game_r .game_r_detail img{height: 40px;width: 40px;margin: 5px 10px 10px 10px;}
+
+
+.fun_p{width: 1200px;height: 500px;margin-top: 150px;}
+.fun_p .funp_title{width: 1200px;height: 50px;background:#7A7D8B;line-height: 50px;}
+.fun_p .funp_title p{text-align: center;}
+.fun_p .funp_detail_l{width: 400px;height: 450px;float:left;}
+.fun_p .funp_detail_l .fpdl_title{width: 400px;height: 50px;background:#79091B;line-height: 50px;}
+.fun_p .funp_detail_l .fpdl_title p{margin-left: 20px;}
+.fun_p .funp_detail_l .fpdl_detail{width: 400px;height: 400px;}
+.fun_p .funp_detail_l .fpdl_detail li{width: 400px;height: 50px;}
+.fun_p .funp_detail_l .fpdl_detail li img{width: 30px;height: 30px;margin-left: 20px;float: left;margin-top: 10px;}
+.fun_p .funp_detail_l .fpdl_detail li a{color: #fff;float: right;margin-top: 15px;}
+.fun_p .funp_detail_l .fpdl_detail li p{font-size: 14px;font-weight: bold;float: left;margin-top: 15px;margin-left: 20px}
+.fun_p .funp_detail_r{width: 800px;height: 450px;float:left;}
+.fun_p .funp_detail_r .funpdr_item{width: 190px;height: 440px;float: left;margin-left: 10px;margin-top: 10px;}
+.fun_p .funp_detail_r .funpdr_item img{width: 190px;height: 300px;}
+.fun_p .funp_detail_r .funpdr_item .funpdr_w{width: 190px;height: 50px;}
+.fun_p .funp_detail_r .funpdr_item .funpdr_w button{width: 120px;height: 30px;margin-left: 30px;margin-top: 5px;background: #E2151E}
+.fun_p .funp_detail_r .funpdr_item .funpdr_w p{color: #748074;font-size: 12px;}
+.fun_p .funp_detail_r .funpdr_item .funpdr_w b{margin-left: 40px;}
+
+
+.fun_k{width: 1200px;height: 750px;margin-top: 20px;}
+.fun_k .funk_tilte{width: 1200px;height: 50px;background:#7A7D8B;line-height: 50px;}
+.fun_k .funk_tilte p{text-align: center;}
+.fun_k .funk_detail{width: 1200px;height: 660px;}
+.fun_k .funk_detail .funkd_item{width: 230px;height: 210px;float: left;background: #467AE7;margin-right: 10px;margin-top: 10px;}
+.fun_k .funk_detail .funkd_item .funkdi_t{width: 230px;height: 170px;}
+.fun_k .funk_detail .funkd_item .funkdi_b{width: 230px;height: 40px;}
+.fun_k .funk_detail .funkd_item .funkdi_b button{float: left;margin-left: 10px;margin-top: 8px;}
+.fun_k .funk_detail .funkd_item .funkdi_b p{float: left;margin-left: 10px;margin-top: 8px;}
+
+footer{height: 300px;width: 100%;background: #B2C9AD}

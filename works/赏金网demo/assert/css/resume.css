@@ -1,0 +1,14 @@
+@font-face{
+	font-family:"xinshu";  
+    src:url('../fonts/glyphicons-xinshu.ttf') 
+}
+body{font-family: 'Microsoft Yahei';min-height: 740px;background: #ddd;}
+a{color: #666;}
+a:hover{color: #EA5E00}
+a,a:hover{text-decoration: none;cursor: pointer;}
+h4{margin:0;}
+ul,li{list-style: none;padding: 0;margin: 0;}
+.container{width: 1200px;margin: 0 auto;padding: 0;}
+.grid{box-shadow: 0 0 5px rgba(0, 0, 0, .2);}
+.f_l{float: left;}
+.f_r{float: right;}

@@ -1,0 +1,40 @@
+.f_l{float: left;}
+.f_r{float: right;}
+
+/*index*/
+.boxer{width: 1200px;height: 842px;margin: 0 auto;padding: 0;background-color: #c9c9c9;}
+.cont{width: 1000px;height: 790px;margin: 0 auto;padding: 0;}
+.cont .layout01{width: 1000px;height: 86px;background-color: #fff;}
+.cont .layout01 .logo{width: 220px;height: 86px;background: url(img/layout_logo.png);}
+.cont .layout01 .item{width: 70px;height: 86px;line-height: 100px;margin-left: 50px;}
+.cont .layout01 .item a{text-decoration: none;color: #000;font-family: 华文细黑;font-size: 17px;font-weight: bold;}
+.cont .layout02{width: 1000px;height: 340px;background-color: #fff;margin-top: 5px;background: url(img/layout02.png);}
+.cont .layout03{width: 980px;height: 334px;background-color: #fff;margin-top: 5px;padding: 10px;}
+.cont .layout03 .lay_l{width: 240px;height: 270px;background-color: #e8e8e8;padding: 5px;}
+.cont .layout03 .lay_l .layl_title{width: 240px;height: 30px;border-bottom: 1px rgba(194, 183, 183, 0.52) solid;line-height: 30px;font-family: 微软雅黑;font-size: 16px;color: #d70006;font-weight: bold;padding-left: 5px;}
+.cont .layout03 .lay_l .layl_cont{width: 240px;height: 240px;}
+.cont .layout03 .lay_l .layl_cont .litem{width: 240px;height: 30px;margin-top: 10px;text-align: center;}
+.cont .layout03 .lay_l .layl_cont .litem .sstyle{width: 240px;height: 30px;}
+.cont .layout03 .lay_l .layl_cont .litem .bstyle{width: 236px;height: 25px;color:#A5A4A4;}
+.cont .layout03 .lay_l .layl_cont .litem .cstyle{width: 100px;height: 25px;color: #fff;background: #cb3332;}
+.cont .layout03 .lay_r{width: 710px;height: 300px;margin-left: 15px;}
+.cont .layout03 .lay_r .layr_item{width: 335px;height: 140px;margin-left: 15px;}
+.cont .layout03 .lay_r .msize{margin-top: 15px;}
+.cont .layout03 .lay_r .layr_item .layri_u{width: 335px;height: 110px;}
+.cont .layout03 .lay_r .layr_item .layri_b{width: 325px;height: 20px;background-color: #6d6c6c;padding: 5px;line-height: 20px;}
+.cont .layout03 .lay_r .layr_item .layri_b:hover{background-color: #86060a;}
+.cont .layout03 .lay_r .layr_item .layri_b a{font-family: 华文细黑;font-size: 17px;color: #fff;text-decoration: none;}
+.copyright{width: 1000px;height: 50px;margin: 0 auto;padding: 0;line-height: 50px;text-align: center;font-size: 12px;color: #000;}
+
+/*page02*/
+.lay_r02{width: 700px;height: 432px;margin-left: 20px;}
+.lay_r02 .layr02_t{width: 700px;height: 32px;background-color: #dedede;font-family: 华文细黑;font-size: 17px;color: #de1e2d;font-weight: bold;line-height: 32px;padding-left: 10px;}
+.lay_r02 .layr02_b{width: 700px;height: 332px;background: url(img/page02_liucheng.jpg);}
+.lay_r02 .layr02_b02{width: 700px;height: 402px;background: url(img/page03_school.jpg);}
+.lay_r02 .layr02_b03{width: 710px;height: 402px;}
+.lay_r02 .layr02_b03 .page04_item{width: 710px;height: 32px;border-bottom: 1px #ddd solid;line-height: 32px;}
+.lay_r02 .layr02_b03 .page04_item ul{list-style: none;}
+.lay_r02 .layr02_b03 .page04_item li{list-style: none;float: left;}
+.lay_r02 .layr02_b03 .page04_item a{font-family: 华文细黑;font-size: 13px;text-decoration: none;color: rgb(218, 17, 17);}
+.lay_r02 .layr02_b03 .page04_item span{color:rgba(88, 83, 83, 0.66);font-size: 13px;}
+
